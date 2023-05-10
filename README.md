@@ -13,13 +13,22 @@ Takes in 3 headers
 - name
 - purpose
 
-and responds with
+if success, responds with
 
 ```typescript
 {
   "status": boolean,
   "messageId": string,
   "verificationCode": string
+}
+```
+
+if error, responds with
+
+```typescript
+{ 
+  status: boolean, 
+  message: string
 }
 ```
 
